@@ -1,0 +1,10 @@
+Package: financialds
+Type: Package
+Title:  stocks/futures(local) financial data
+Version: 0.1.0
+Author: rick.usong
+Maintainer: rick <rick.usong@gmail.com>
+Description: scratch stocks/futures financial data from chiness website.
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
