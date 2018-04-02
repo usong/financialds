@@ -4,9 +4,9 @@ library(xts)
 library(TTR)
 library(quantmod)
 w.start()
-codes     = 'NI1807.SHF'
-begintime = '2018-03-08'
-endtime   = '2018-03-09'
+codes     = 'HC1805.SHF'
+begintime = '2018-03-30'
+endtime   = '2018-03-31'
 fields    = 'open,high,low,close'
 mat       = w.wsi(codes, fields, begintime , endtime, 'BarSize=5')$Data
 
@@ -20,7 +20,8 @@ instrument = 'windDataTest'
 assign(instrument,
        fr,
        .GlobalEnv)
-r <- getTrends(symbol = instrument)
+r <- getTrends(symbol = instrument,interval=c(3,4))
+
 chart_Series(fr)
 #mark range high or low point
 add_TA(
