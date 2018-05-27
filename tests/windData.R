@@ -5,8 +5,8 @@ library(TTR)
 library(quantmod)
 w.start()
 codes     = 'HC1805.SHF'
-begintime = '2018-03-30'
-endtime   = '2018-03-31'
+begintime = '2018-04-26'
+endtime   = '2018-04-27'
 fields    = 'open,high,low,close'
 mat       = w.wsi(codes, fields, begintime , endtime, 'BarSize=5')$Data
 

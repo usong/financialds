@@ -15,5 +15,8 @@
 [1] "hc_f_1801"
 > getContacts('hc_f','root','111111') #return top 15 volumn
 ```
-
+寻找价格波段高低点
+```r
+> r <- getTrends(symbol = instrument,interval=c(3,4)) 
+```
 
